@@ -18,6 +18,10 @@ app.add_middleware(
 
 # Routers
 
+from app.api.create_todo import router
+app.include_router(router)
+from app.api.list_todos import router
+app.include_router(router)
 
 # Database
 
